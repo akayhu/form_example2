@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Language"content="zh-tw" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Form Example2</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="main_title">Donation Form</div>
+
+		<!-- Name -->
+		<div class="main_name">
+			<div>Name *</div>
+			<ul>
+				<li>
+					<input type="text" />
+					<div>First Name</div>
+				</li>
+				<li>
+					<input type="text" />
+					<div>Last Name</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Address -->
+		<div class="main_address">
+			<div>Address *</div>
+			<dl>
+				<dd>
+					<input type="text" />
+				</dd>
+				<dd>
+					<input type="text" />
+				</dd>
+				<dd>
+					<ul>
+						<li>
+							<input type="text" />
+							<div>City</div>
+						</li>
+						<li>
+							<select type="text" />
+								<option value="">&nbsp;</option>
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+							</select>
+							<div>State</div>
+						</li>
+						<li>
+							<input type="text" />
+							<div>ZIP Code</div>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+
+		<!-- Phone -->
+		<div class="main_phone">
+			<div>Phone *</div>
+			<input type="text" />
+		</div>
+
+		<!-- Email -->
+		<div class="main_mail">
+			<div>Email *</div>
+			<input type="text" />
+		</div>
+
+		<!-- 捐款金額 -->
+		<div class="main_donate">
+			<div>Amount you would like to donate</div>
+			<span>$</span> <input type="number" step="any" />
+		</div>
+
+		<!-- 用別人名義捐款 -->
+		<div class="main_someone">
+			<div>Would you like to make this donation in someone else's name?</div>
+			<span><input type="radio" name="field" /> Yes</span>
+			<span><input type="radio" name="field" /> No</span>
+		</div>
+
+		<!-- 用別人名義內容 -->
+		<div>
+			
+			<!-- someone title -->
+			<div class="someone_div">
+				<div class="someone_title">Honorary Donation</div>
+				<div class="someone_content">If you would like to make an honorary donation in someone else's name, please fill out their info below:</div>
+			</div>
+
+			<!-- someone Name -->
+			<div class="someone_name">
+				<div>Name *</div>
+				<ul>
+					<li>
+						<input type="text" />
+						<div>First Name</div>
+					</li>
+					<li>
+						<input type="text" />
+						<div>Last Name</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- someone message -->
+			<div class="someone_message">
+				<div>Message (optional)</div>
+				<textarea></textarea>
+			</div>
+
+		</div>
+
+		<!-- submit -->
+		<div class="main_submit">
+			<span>Submit Form</span>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+
+</body>
+</html>

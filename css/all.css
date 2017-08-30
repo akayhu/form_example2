@@ -1,0 +1,199 @@
+ul, li, dl, dd {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input, select, textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 2.4375rem;
+	margin: 0 0 1rem;
+	padding: .5rem;
+	border: 1px solid #cacaca;
+	border-radius: 0;
+	background-color: #fefefe;
+	box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #0a0a0a;
+	transition: box-shadow 0.5s,border-color 0.25s ease-in-out;
+	appearance: none;
+	-moz-transition: box-shadow .2s ease-in-out;
+	-o-transition: box-shadow .2s ease-in-out;
+	-webkit-transition: box-shadow .2s ease-in-out;
+	transition: box-shadow .2s ease-in-out;
+}
+input:focus, select:focus, textarea:focus {
+	border-color: #cfd4d8;
+	-moz-box-shadow: 0 0 5px rgba(89, 93, 100, 0.75);
+	-webkit-box-shadow: 0 0 5px rgba(89, 93, 100, 0.75);
+	box-shadow: 0 0 5px rgba(89, 93, 100, 0.75);
+	border: 1px solid #cfd4d8;
+	outline: none;
+}
+input[type="radio"] {
+	position: relative;
+	float: left;
+	margin: 0 7px 0 0;
+	padding: 0;
+	border: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	top: 2px;
+	width: 14px;
+	height: 14px;
+	outline: none;
+}
+input[type="radio"]:before {
+	width: 14px;
+	height: 14px;
+	margin-right: 7px;
+	border: 1px solid #cfd4d8;
+	background-color: #ffffff;
+}
+.main {
+	width: 790px;
+	margin: 20px auto 100px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.main_title {
+	background-color: #edeff0;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px 0;
+	margin-bottom: 30px;
+}
+.main_name,
+.main_address,
+.main_phone,
+.main_mail,
+.main_donate,
+.main_someone,
+.someone_name,
+.someone_message {
+	padding: 10px 0;
+	overflow: hidden;
+}
+.main_name ul li,
+.someone_name ul li {
+	float: left;
+}
+.main_name ul li:first-child,
+.someone_name ul li:first-child {
+	margin-right: 10px;
+	width: 49.1%;
+}
+.main_name ul li:last-child,
+.someone_name ul li:last-child {
+	width: 49.1%;
+}
+.main_name > div,
+.main_address > div,
+.main_phone > div,
+.main_mail > div,
+.main_donate > div,
+.main_someone > div,
+.someone_name > div,
+.someone_message > div {
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #595d64;
+}
+.main_name ul li > div,
+.main_address ul li > div,
+.someone_name ul li > div {
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 12px;
+	color: #595d64;
+}
+.main_address dl dd input {
+	margin-bottom: 10px;
+}
+.main_address ul li {
+	float: left;
+}
+.main_address ul li:nth-child(1) {
+	width: 56%;
+	margin-right: 10px;
+}
+.main_address ul li:nth-child(2) {
+	width: 30.3%;
+	margin-right: 10px;
+}
+.main_address ul li:nth-child(3) {
+	width: 11%;
+}
+.main_address ul li select:after {
+	content: " ";
+	border-color: transparent #f4f4f4 transparent transparent;
+	border-style: dashed solid dashed dashed;
+	display: inline-block;
+	border-width: 10px;
+	top: 13px;
+	right: 0;
+	position: absolute;
+}
+.main_phone input,
+.main_mail input{
+	margin-bottom: 10px;
+}
+.main_donate span {
+	font-size: 14px;
+	float: left;
+	margin: 0 10px 0 15px;
+	line-height: 2.5;
+}
+.main_donate input {
+	width: 95.5%;
+}
+.main_someone {
+	margin-bottom: 20px;
+}
+.main_someone span {
+	float: left;
+	overflow: hidden;
+	margin-right: 20px;
+	font-size: 14px;
+}
+.someone_div {
+	background-color: #edeff0;
+	text-align: center;
+	padding: 25px 0;
+	margin-bottom: 20px;
+}
+.someone_div .someone_title {
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+.someone_message {
+	margin-bottom: 30px;
+}
+.someone_message textarea {
+	padding: 7px;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 14px;
+	color: #595d64;
+	outline: none;
+	height: 156px;
+}
+.main_submit {
+	text-align: center;
+}
+.main_submit span {
+	background-color: #595d64;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+}
+.error {
+	border: solid 1px red;
+	background-color: #fae9e9;
+	padding: 10px 5px;
+}
