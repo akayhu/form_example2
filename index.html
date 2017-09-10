@@ -15,38 +15,38 @@
 		<div class="main_title">Donation Form</div>
 
 		<!-- Name -->
-		<div class="main_name">
+		<div class="main_name shared">
 			<div>Name *</div>
 			<ul>
 				<li>
-					<input type="text" />
+					<input type="text" name="firstName" />
 					<div>First Name</div>
 				</li>
 				<li>
-					<input type="text" />
+					<input type="text" name="lastName" />
 					<div>Last Name</div>
 				</li>
 			</ul>
 		</div>
 
 		<!-- Address -->
-		<div class="main_address">
+		<div class="main_address shared">
 			<div>Address *</div>
 			<dl>
 				<dd>
-					<input type="text" />
+					<input type="text" name="addressOne" />
 				</dd>
 				<dd>
-					<input type="text" />
+					<input type="text" name="addressTwo" />
 				</dd>
 				<dd>
 					<ul>
 						<li>
-							<input type="text" />
+							<input type="text" name="city" />
 							<div>City</div>
 						</li>
 						<li>
-							<select type="text" />
+							<select type="text" name="state" />
 								<option value="">&nbsp;</option>
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
@@ -58,7 +58,7 @@
 							<div>State</div>
 						</li>
 						<li>
-							<input type="text" />
+							<input type="text" name="zipCode" />
 							<div>ZIP Code</div>
 						</li>
 					</ul>
@@ -67,32 +67,32 @@
 		</div>
 
 		<!-- Phone -->
-		<div class="main_phone">
+		<div class="main_phone shared">
 			<div>Phone *</div>
-			<input type="text" />
+			<input type="text" name="phone" />
 		</div>
 
 		<!-- Email -->
-		<div class="main_mail">
+		<div class="main_mail shared">
 			<div>Email *</div>
-			<input type="text" />
+			<input type="text" name="email" />
 		</div>
 
 		<!-- 捐款金額 -->
-		<div class="main_donate">
+		<div class="main_donate shared">
 			<div>Amount you would like to donate</div>
-			<span>$</span> <input type="number" step="any" />
+			<span>$</span> <input type="number" step="any" name="donate" />
 		</div>
 
 		<!-- 用別人名義捐款 -->
-		<div class="main_someone">
+		<div class="main_someone shared">
 			<div>Would you like to make this donation in someone else's name?</div>
-			<span><input type="radio" name="field" /> Yes</span>
-			<span><input type="radio" name="field" /> No</span>
+			<span><input type="radio" value="0" name="field" /> Yes</span>
+			<span><input type="radio" value="1" name="field" /> No</span>
 		</div>
 
 		<!-- 用別人名義內容 -->
-		<div>
+		<div class="default_main">
 			
 			<!-- someone title -->
 			<div class="someone_div">
@@ -105,11 +105,11 @@
 				<div>Name *</div>
 				<ul>
 					<li>
-						<input type="text" />
+						<input type="text" name="someoneFirstName" />
 						<div>First Name</div>
 					</li>
 					<li>
-						<input type="text" />
+						<input type="text" name="someoneLastName" />
 						<div>Last Name</div>
 					</li>
 				</ul>
@@ -125,7 +125,7 @@
 
 		<!-- submit -->
 		<div class="main_submit">
-			<span>Submit Form</span>
+			<button>Submit Form</button>
 		</div>
 
 	</div>

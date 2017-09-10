@@ -186,14 +186,20 @@ input[type="radio"]:before {
 .main_submit {
 	text-align: center;
 }
-.main_submit span {
+.main_submit button {
 	background-color: #595d64;
 	color: #fff;
 	font-size: 14px;
 	padding: 10px;
+	border: 0;
+	cursor: pointer;
 }
 .error {
 	border: solid 1px red;
 	background-color: #fae9e9;
 	padding: 10px 5px;
+	margin-bottom: 10px;
+}
+.default_main {
+	display: none;
 }
