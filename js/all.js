@@ -8,30 +8,30 @@ formObj = (function(){
     phoneCheck: false,
     emailCheck: false,
     someoneNameCheck: false,
-    someoneChange: false,
+    someoneChange: false
   };
 
   var inputName = {
-      firstName: $("input[name=firstName]"),
-      lastName: $("input[name=lastName]"),
-      addressOne: $("input[name=addressOne]"),
-      city: $("input[name=city]"),
-      state: $("select[name=state]"),
-      zipCode: $("input[name=zipCode]"),
-      phone: $("input[name=phone]"),
-      email: $("input[name=email]"),
-      someoneFirstName: $("input[name=someoneFirstName]"),
-      someoneLastName: $("input[name=someoneLastName]")
-    };
+    firstName: $("input[name=firstName]"),
+    lastName: $("input[name=lastName]"),
+    addressOne: $("input[name=addressOne]"),
+    city: $("input[name=city]"),
+    state: $("select[name=state]"),
+    zipCode: $("input[name=zipCode]"),
+    phone: $("input[name=phone]"),
+    email: $("input[name=email]"),
+    someoneFirstName: $("input[name=someoneFirstName]"),
+    someoneLastName: $("input[name=someoneLastName]")
+  };
 
   var className = {
-      mainName: $(".main_name"),
-      mainAddress: $(".main_address"),
-      mainPhone: $(".main_phone"),
-      mainMail: $(".main_mail"),
-      defaultMain: $(".default_main"),
-      someoneName: $(".someone_name")
-    };
+    mainName: $(".main_name"),
+    mainAddress: $(".main_address"),
+    mainPhone: $(".main_phone"),
+    mainMail: $(".main_mail"),
+    defaultMain: $(".default_main"),
+    someoneName: $(".someone_name")
+  };
 
   var _addErrorClass = function( divName ){ // 新增錯誤class
     divName.addClass("error");
