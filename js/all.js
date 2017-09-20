@@ -13,7 +13,7 @@ formObj = (function(){
   };
 
   // 檢查是否勾選其他人名義捐款 0 = yes, 1 = no
-  var _hasSomeoneElseDonationValue = function( num, className ){
+  var _hasSomeoneElseDonationValue = function( num, className, inputName ){
     var defaultMainDiv = className.defaultMain;
     if( num === 0 ) {
       uiVariety.blockDisplayShow( defaultMainDiv );
@@ -200,7 +200,7 @@ myPage = (function(){
     inputName.someone.on( "change", function(){
       var self = $(this);
       var someoneValue = parseInt( self.val() ); // 字串轉數值
-      formObj.hasSomeoneElseDonationValue( someoneValue, className );
+      formObj.hasSomeoneElseDonationValue( someoneValue, className, inputName );
     });
 
     // submit送出
